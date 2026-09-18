@@ -1,0 +1,30 @@
+body {
+  background-color: #f0f0f0;
+}
+h1 {
+  color: #333;
+}
+
+.menu {
+  list-style: none; /* Remove as bolinhas da lista */
+  display: flex;    /* Coloca os itens lado a lado */
+  gap: 20px;        /* Espaço entre os links */
+  padding-right: 40px;
+  /*padding-top: 20px;*/
+  justify-content: flex-end;
+}
+
+.menu a {
+  text-decoration: none; /* Remove o sublinhado do link */
+  color: #333;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  color: #0066cc; /* Cor ao passar o mouse */
+}
+
+.topo {
+    height: 200px;
+    background-color: #ccc;
+}
