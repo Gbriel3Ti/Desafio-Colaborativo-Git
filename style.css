@@ -1,30 +1,59 @@
+/* Configurações Gerais do Site */
 body {
-  background-color: #f0f0f0;
-}
-h1 {
-  color: #333;
-}
-
-.menu {
-  list-style: none; /* Remove as bolinhas da lista */
-  display: flex;    /* Coloca os itens lado a lado */
-  gap: 20px;        /* Espaço entre os links */
-  padding-right: 40px;
-  /*padding-top: 20px;*/
-  justify-content: flex-end;
+  background-color: #f8f9fa; /* Um cinza claro mais limpo e moderno */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #212529;
 }
 
-.menu a {
-  text-decoration: none; /* Remove o sublinhado do link */
-  color: #333;
-  font-weight: bold;
-}
-
-.menu a:hover {
-  color: #0066cc; /* Cor ao passar o mouse */
-}
-
+/* Cabeçalho (Topo) */
 .topo {
-    height: 200px;
-    background-color: #ccc;
+  background-color: #ffffff; /* Fundo branco dá mais destaque e elegância */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Sombra leve na parte inferior */
+  padding: 0 10%; /* Cria uma margem confortável nas laterais */
+  height: 80px; /* Altura ideal para barras de navegação */
+  
+  /* Alinha o H1 e o Menu lado a lado nos extremos */
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+/* Título */
+.topo h1 {
+  font-size: 1.5rem;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+/* Menu de Navegação */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 25px; /* Espaçamento levemente maior entre os links */
+  margin: 0;
+  padding: 0;
+}
+
+/* Links do Menu */
+.menu a {
+  text-decoration: none;
+  color: #4a5568; /* Cinza escuro menos agressivo que o preto puro */
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s ease-in-out; /* Transição suave na mudança de cor */
+}
+
+/* Efeito ao passar o mouse */
+.menu a:hover {
+  color: #0066cc; /* Azul vibrante para o destaque */
+}
+
+/* Estilo básico para o conteúdo do texto principal */
+main {
+  max-width: 800px;
+  margin: 40px auto; /* Centraliza o texto na tela */
+  padding: 0 20px;
+  line-height: 1.6; /* Aumenta o espaçamento das linhas para melhorar a leitura */
 }
